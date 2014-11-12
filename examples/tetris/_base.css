@@ -1,0 +1,32 @@
+body { padding: 1px; margin: 1px; }
+.keys { position: absolute; left: 300px; top: 60px; background-color: #f0f0f0; padding: 30px; width: 150px; height: 100px; }
+.keys div {position: relative; }
+.keys div div { position: absolute; width:46px; height: 46px; text-align: center; line-height: 46px; border: 1px solid #c0c0c0; background-color: #ffffff; cursor: pointer; }
+.keys div div.left  { left:   1px; top: 51px; }
+.keys div div.right { left: 101px; top: 51px; }
+.keys div div.up    { left: 51px; top:  1px; }
+.keys div div.quicklyDown  { left: 51px; top: 51px; }
+.keys div div.A { background-color: #e0e0e0; }
+#restart {top:150px; left:1px; width:146px; font-family:Arial; font-size:14px;  }
+.noselect {
+ -webkit-touch-callout:none;
+   -webkit-user-select:none;
+    -khtml-user-select:none;
+      -moz-user-select:none;
+       -ms-user-select:none;
+        -o-user-select:none;
+           user-select:none;
+}
+.score{
+    position:absolute;
+    top:2px;
+    left:300px;
+	display:table;
+	padding:20px 0px;
+}
+.score ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    text-align:left;
+}

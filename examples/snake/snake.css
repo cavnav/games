@@ -1,0 +1,27 @@
+.canvas{
+    float:left;
+}
+.scoresBox{
+    float:left;
+    padding-left:20px;
+}
+.score{
+    margin:0px;
+    padding: 20px 0px 20px;
+    list-style-type:none;
+}
+#restart{
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+}
+#restart.keydown{
+    background-color:#e0e0e0;
+    padding:19px;
+}
+.noSelectText{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}

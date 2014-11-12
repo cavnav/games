@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<link href="snake.css" rel="stylesheet" type="text/css"></style>
+<script src="../../jq.js"></script>
+<script src="snake.js"></script>
+<body>
+<canvas class="canvas" width=400 height=400 style='border:1px solid'></canvas>
+<div class="scoresBox">
+    <ul class="score">
+        <li>Рекорд: <span id='record'></span></li>
+        <li>Очки: <span id='points'></span></li>
+    </ul>
+    <div id="restart" class="noSelectText">Заново</div>
+</div>  
+
+<script>
+    $(document).ready(function(){
+        Game.record = $(".scoresBox #record");
+        Game.points = $(".scoresBox #points");        
+        
+        Game.init();
+        Game.start();
+        
+        $("#restart").mousedown(function(){
+                Game.init();
+                Game.start();
+                $(this).addClass("keydown");
+        });
+        $("#restart").mouseup(function(){$(this).removeClass("keydown");});
+    });
+</script>
+</body>
